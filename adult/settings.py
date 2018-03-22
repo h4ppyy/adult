@@ -15,6 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -34,8 +35,7 @@ TEMPLATES = [
         'BACKEND': 'djangomako.backends.MakoBackend',
         'NAME': 'mako',
         'DIRS': [
-            #BASE_DIR + '/japan_user/templates/',
-            #BASE_DIR + '/japan_admin/templates/',
+            BASE_DIR + '/templates/',
         ],
         'APP_DIRS': False,
         'OPTIONS': {
@@ -102,5 +102,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR + '/static/'
 STATICFILES_DIRS = [
-    #BASE_DIR + '/japan_user/static/'
+    BASE_DIR + '/main/static/'
 ]
