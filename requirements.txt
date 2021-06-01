@@ -26,4 +26,4 @@ query-string==0.0.28
 request==0.0.26
 requests==2.11.1
 selenium==3.8.1
-urllib3==1.22
+urllib3==1.26.5
